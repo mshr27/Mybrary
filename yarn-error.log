@@ -1,5 +1,5 @@
 Arguments: 
-  /home/vagrant/.nvm/versions/node/v10.14.2/bin/node /home/vagrant/.yarn/bin/yarn.js add mongodb-clients --save-dev
+  /home/vagrant/.nvm/versions/node/v10.14.2/bin/node /home/vagrant/.yarn/bin/yarn.js add malter
 
 PATH: 
   /home/vagrant/bin:/home/vagrant/.local/bin:/home/vagrant/.yarn/bin:/home/vagrant/.config/yarn/global/node_modules/.bin:/home/vagrant/.nvm/versions/node/v10.14.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/mongodb-clients: Not found
+  Error: https://registry.yarnpkg.com/malter: Not found
       at Request.params.callback [as _callback] (/home/vagrant/.yarn/lib/cli.js:66255:18)
       at Request.self.callback (/home/vagrant/.yarn/lib/cli.js:129397:22)
       at Request.emit (events.js:182:13)
@@ -41,13 +41,14 @@ npm manifest:
     "license": "ISC",
     "dependencies": {
       "all": "^0.0.0",
+      "body-parser": "^1.19.0",
       "dotenv": "^8.1.0",
       "ejs": "^2.7.1",
       "express": "^4.17.1",
       "express-ejs-layouts": "^2.5.0",
       "mongodb": "^3.3.2",
       "mongoose": "^5.7.1",
-      "nodemon": "^1.19.2"
+      "nodemon": "^1.19.2"  
     }
   }
 
@@ -197,7 +198,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
     integrity sha512-MKiLiV+I1AA596t9w1sQJ8jkiSr5+ZKi0WKrYGUn6d1Fx+Ij4tIj+m2WMQSGczs5jZVxV339chE8iwk6F64wjA==
   
-  body-parser@1.19.0:
+  body-parser@1.19.0, body-parser@^1.19.0:
     version "1.19.0"
     resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
     integrity sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
